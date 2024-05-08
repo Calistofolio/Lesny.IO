@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   botaoLogin:{
     backgroundColor:"#6495ED",
     height: 50,
-    mmarginHorizontal: 50,
+    marginHorizontal: 50,
     marginVertical: 20,
     borderRadius: 50,
     padding: 10
