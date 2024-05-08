@@ -73,7 +73,11 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins Regular",
     textAlign: "center",
     elevation: 20,
-    backgroundColor : "#FFFAFA"
+    backgroundColor : "#FFFAFA",
+    shadowColor: '#171717',
+    shadowOffset: {width: -2, height: 4},
+    shadowOpacity: 0.2,
+    shadowRadius: 3
   },
   botaoLogin:{
     backgroundColor:"#6495ED",
