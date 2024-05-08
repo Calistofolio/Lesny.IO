@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     fontFamily: "Poppins Regular",
     textAlign: "center",
-    elevation: 20,
+    elevation: 5,
     backgroundColor : "#FFFAFA",
     shadowColor: '#171717',
     shadowOffset: {width: -2, height: 4},
