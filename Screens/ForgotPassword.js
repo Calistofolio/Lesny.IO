@@ -2,16 +2,14 @@ import React, {useState} from "react";
 import { View, StyleSheet, Text, TextInput, TouchableOpacity, Image } from "react-native"
 
 
-export default function Login({navigation}){
+export default function ForgotPassword({navigation}){
 
-  
 const[email, setEmail] = useState("")
-const[senha, setSenha] = useState("")
 
   return(
     <View style = {styles.containerPrincipal}>
       <View style = {styles.topBar}>
-        <Text style = {styles.title}>Bem vindo de volta!</Text>
+        <Text style = {styles.title}>Te ajudaremos a recuperar sua conta!</Text>
       </View>
 
       <Image source={require('../assets/imgs/BMI.png')} style={{width: 300, height: 300, alignSelf: "center"}} />
@@ -21,24 +19,16 @@ const[senha, setSenha] = useState("")
           onChangeText={(texto) => setEmail(texto)}
           placeholder="Digite seu e-mail"/>
         </View>
-
-        <View  style = {[styles.containerLogin, styles.elevation]}>
-          <TextInput style = {styles.contentBox} value={senha}
-          onChangeText={(texto) => setSenha(texto)}
-          placeholder="Digite sua senha" secureTextEntry/>
-        </View>
-      <View>
-        <Text style = {styles.textoLink} onPress={() => navigation.navigate("Esqueci minha senha")}>Esqueceu sua senha?</Text>
-      </View>
       
-      <TouchableOpacity style = {styles.botaoLogin}>
-        <Text style ={styles.textoLogin}>Entrar</Text>
-      </TouchableOpacity>
-
-       <View>
-        <Text style = {styles.textoLink}>Não tem uma conta? Cadastre-se!</Text>
-      </View>
-    </View>
+      
+        <TouchableOpacity style = {styles.botaoLogin}>
+          <Text style ={styles.textoLogin}>Recuperar senha</Text>
+        </TouchableOpacity>
+      
+        <View>
+          <Text style = {styles.textoLink} onPress={() => navigation.navigate("Login")}>Voltar para login</Text>
+        </View>
+  </View>
   )
 }
 
@@ -54,7 +44,7 @@ const styles = StyleSheet.create({
     marginTop: 30
   },
   title:{
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: "bold",
     margin: 20,
     fontFamily: "Poppins Regular",
@@ -63,7 +53,7 @@ const styles = StyleSheet.create({
   containerLogin:{
     flexDirection: "column",
     height: 50,
-    margin: 10
+    margin: 20
   },
   contentBox:{ 
     borderRadius: 50,
@@ -78,7 +68,7 @@ const styles = StyleSheet.create({
   botaoLogin:{
     backgroundColor:"#6495ED",
     height: 50,
-    marginHorizontal: 20,
+    margin: 20,
     borderRadius: 50,
     padding: 10
   },
@@ -92,7 +82,7 @@ const styles = StyleSheet.create({
     fontFamily: "Poppins Regular",
     alignSelf: "center",
     color: "#1E90FF",
-    marginVertical: 30
+    marginVertical: 10
   }
-}
-)
+})
+
