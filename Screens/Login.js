@@ -31,7 +31,7 @@ const[senha, setSenha] = useState("")
         <Text style = {styles.textoLink} onPress={() => navigation.navigate("Esqueci minha senha")}>Esqueceu sua senha?</Text>
       </View>
       
-      <TouchableOpacity style = {styles.botaoLogin}>
+      <TouchableOpacity style = {styles.botaoLogin} onPress={() => navigation.navigate("Index")}>
         <Text style ={styles.textoLogin}>Entrar</Text>
       </TouchableOpacity>
 
