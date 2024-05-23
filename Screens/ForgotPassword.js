@@ -21,8 +21,8 @@ const[email, setEmail] = useState("")
         </View>
       
       
-        <TouchableOpacity style = {styles.botaoLogin}>
-          <Text style ={styles.textoLogin}>Recuperar senha</Text>
+        <TouchableOpacity style = {styles.botaoRecuperar}>
+          <Text style ={styles.textoRecuperar}>Recuperar senha</Text>
         </TouchableOpacity>
       
         <View>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3
   },
-  botaoLogin:{
+  botaoRecuperar:{
     backgroundColor:"#6495ED",
     height: 50,
     marginHorizontal: 50,
@@ -77,10 +77,11 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10
   },
-  textoLogin:{
+  textoRecuperar:{
     fontSize: 20,
     fontFamily: "Poppins Regular",
-    alignSelf: "center"
+    alignSelf: "center",
+    color: "#FFF5EE"
   }, 
   textoLink:{
     fontSize: 20,

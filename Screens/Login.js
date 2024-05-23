@@ -89,7 +89,8 @@ const styles = StyleSheet.create({
   textoLogin:{
     fontSize: 20,
     fontFamily: "Poppins Regular",
-    alignSelf: "center"
+    alignSelf: "center",
+    color: "#FFF5EE"
   }, 
   textoLink:{
     fontSize: 20,

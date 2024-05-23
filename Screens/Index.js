@@ -13,20 +13,20 @@ export default function Index({navigation}){
 
           
         <View  style = {[styles.functionTitle, styles.elevation]}>
-          <Text style = {styles.textoLogin}> Calcular IMC e TMB </Text>
+          <Text style = {[styles.textoSecao, styles.colorChange]}> Calcular IMC e TMB </Text>
         </View>
 
       <View style = {styles.results}>
             <View style = {styles.tables}>
               <View style = {[styles.contentBox, styles.sizeUp]}>
-                <Text style = {styles.textoLogin}> IMC </Text>
+                <Text style = {styles.textoSecao}> IMC </Text>
                 <Text style = {styles.textoResult}> 18,7 </Text>
-                <Text style = {styles.textoLogin}> Peso ideal </Text>
+                <Text style = {styles.textoSecao}> Peso ideal </Text>
               </View>
               <View style = {styles.contentBox}>
-                <Text style = {styles.textoLogin}> TMB - Manutenção </Text>
+                <Text style = {styles.textoSecao}> TMB - Manutenção </Text>
                 <Text style = {styles.textoResult}> 2051,4 KCAL </Text>
-                <Text style = {styles.textoLogin}> Por dia </Text>
+                <Text style = {styles.textoSecao}> Por dia </Text>
               </View>
 
               
@@ -34,34 +34,34 @@ export default function Index({navigation}){
             </View>
           <View style = {styles.tables}>
             <View style = {styles.contentBox}>
-                <Text style = {styles.textoLogin}> TMB - Deficit </Text>
+                <Text style = {styles.textoSecao}> TMB - Deficit </Text>
                 <Text style = {styles.textoResult}> 1551,4 KCAL </Text>
-                <Text style = {styles.textoLogin}> Por dia </Text>
+                <Text style = {styles.textoSecao}> Por dia </Text>
               </View>
 
               <View style = {styles.contentBox}>
-                <Text style = {styles.textoLogin}> TMB - Superavit </Text>
+                <Text style = {styles.textoSecao}> TMB - Superavit </Text>
                 <Text style = {styles.textoResult}> 2551,4 kcal </Text>
-                <Text style = {styles.textoLogin}> Por dia </Text>
+                <Text style = {styles.textoSecao}> Por dia </Text>
               </View>
 
             </View>
       </View>
 
         <View  style = {[styles.functionTitle, styles.elevation]}>
-          <Text style = {styles.textoLogin}> Calcular BF </Text>
+          <Text style = {[styles.textoSecao, styles.colorChange]}> Calcular BF </Text>
         </View>
         <View style = {[styles.contentBox, styles.sizeDown]}>
-                <Text style = {styles.textoLogin}> Gordura corporal </Text>
+                <Text style = {styles.textoSecao}> Gordura corporal </Text>
                 <Text style = {styles.textoResult}> 25% </Text>
               </View>
 
         <View  style = {[styles.functionTitle, styles.elevation]}>
-          <Text style = {styles.textoLogin}> Calcular QDR de água </Text>
+          <Text style = {[styles.textoSecao, styles.colorChange]}> Calcular QDR de água </Text>
         </View>
         <View style = {[styles.contentBox, styles.sizeDown]}>
                 <Text style = {styles.textoResult}> 2,5L </Text>
-                <Text style = {styles.textoLogin}> Por dia </Text>
+                <Text style = {styles.textoSecao}> Por dia </Text>
               </View>
       
       
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3
   },
-  textoLogin:{
+  textoSecao:{
     fontSize: 20,
     fontFamily: "Poppins Regular",
     alignSelf: "center",
@@ -139,6 +139,9 @@ const styles = StyleSheet.create({
   }, 
   sizeUp:{
     width: 150
-  }
+  },
+  colorChange:{
+    color: "#FFF5EE"
+   }
   }
 )
